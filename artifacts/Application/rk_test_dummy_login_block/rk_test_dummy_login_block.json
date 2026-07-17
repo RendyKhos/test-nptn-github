@@ -1,0 +1,364 @@
+{
+	"id": "c2f2ce64-1b83-4f1c-a6d9-3b203dab4dda",
+	"createdAt": "2026-07-16T12:08:40.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "b4d3a9c2-aa1d-4934-86a5-80f34ac84121",
+			"fieldName": "LoginShell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "appWidthLimited",
+					"grouping": "Properties",
+					"value": "false",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "4b8af967-c425-41fd-82d7-e2beb0fa13fa",
+					"fieldName": "LoginApp",
+					"fieldParent": "b4d3a9c2-aa1d-4934-86a5-80f34ac84121",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "defaultTransitionName",
+							"grouping": "Properties",
+							"value": "show",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "00673d2a-12d3-4f8f-a065-1aae698cfaab",
+							"fieldName": "LoginPage",
+							"fieldParent": "4b8af967-c425-41fd-82d7-e2beb0fa13fa",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Page Title",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "6db2dd03-bab2-4285-ec4b-665662892561",
+									"fieldName": "VBox",
+									"fieldParent": "00673d2a-12d3-4f8f-a065-1aae698cfaab",
+									"fieldType": "sap.m.VBox",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "bb4c4f9c-d97b-41e4-c137-dad94115a57e",
+											"fieldName": "LoginText",
+											"fieldParent": "6db2dd03-bab2-4285-ec4b-665662892561",
+											"fieldType": "nep.bootstrap.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Login Page Block",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "margin",
+													"grouping": "Properties",
+													"value": "MarginTopBottom2",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "textColor",
+													"grouping": "Properties",
+													"value": "Danger",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "fontSize",
+													"grouping": "Properties",
+													"value": "FontSize1",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "fontWeight",
+													"grouping": "Properties",
+													"value": "Bold",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "a63db737-6d1c-4909-9905-af724dc9bacf",
+											"fieldName": "InputUsername",
+											"fieldParent": "6db2dd03-bab2-4285-ec4b-665662892561",
+											"fieldType": "nep.bootstrap.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "placeholder",
+													"grouping": "Properties",
+													"value": "user",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "margin",
+													"grouping": "Properties",
+													"value": "MarginBottom2",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "b05a5acf-456a-4294-9721-2fb1c1490d92",
+											"fieldName": "InputPassword",
+											"fieldParent": "6db2dd03-bab2-4285-ec4b-665662892561",
+											"fieldType": "nep.bootstrap.Input",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Password",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "placeholder",
+													"grouping": "Properties",
+													"value": "***",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "margin",
+													"grouping": "Properties",
+													"value": "MarginBottom2",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "053f08f3-d822-462e-b45e-ba7639911583",
+											"fieldName": "LoginButton",
+											"fieldParent": "6db2dd03-bab2-4285-ec4b-665662892561",
+											"fieldType": "nep.bootstrap.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "LoginUser(InputUsername.getValue(), InputPassword.getValue());",
+													"script": "LoginUser(InputUsername.getValue(), InputPassword.getValue());",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Click Me",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "0c63a060-7d45-4df9-d95d-9402aff112e2",
+					"fieldName": "APIs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "9c6dd129-3c23-47c1-d8c7-a56a3d8b4bdf",
+					"fieldName": "Dialogs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "0ed5f4bd-f5ce-486b-a251-47a931abc90c",
+					"fieldName": "Events",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "a313c1ab-43a0-4137-d402-78dd84283222",
+					"fieldName": "Models",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "7a6ee271-3605-4d03-957b-6adfa5eeadff",
+					"fieldName": "Scripts",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "c591b15b-edd8-4033-f847-5d27dc817b35",
+							"fieldName": "LoginScript",
+							"fieldParent": "7a6ee271-3605-4d03-957b-6adfa5eeadff",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/LoginScript.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "03d04d6e-ced7-441c-9f12-eaf3873b4b27",
+							"fieldName": "Init",
+							"fieldParent": "7a6ee271-3605-4d03-957b-6adfa5eeadff",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/Init.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "26.07.17.1458",
+	"application": "rk_test_dummy_login_block",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": true,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [],
+	"package": "08c1037d-457c-4cd3-9776-88243afb929a"
+}
